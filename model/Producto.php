@@ -1,6 +1,6 @@
 <?php
 
-class Producto{
+class Producto {
 
   private $idProducto;
   private $nombre;
@@ -9,6 +9,7 @@ class Producto{
   private $precio;
   private $imgUrl;
 
+  
   public function __construct($idProducto,$nombre,$descripcion,$stock,$precio,$imgUrl)
   {
     $this->idProducto = $idProducto;
@@ -18,6 +19,7 @@ class Producto{
     $this->precio = $precio;
     $this->imgUrl = $imgUrl;
   }
+
 
   public function getIdProducto()
   {
@@ -42,5 +44,30 @@ class Producto{
   public function getImgUrl()
   {
     return $this->imgUrl;
+  }
+
+  public function setIdProducto($idProducto)
+  {
+    $this->idProducto = $idProducto;
+  }
+  public function setNombre($nombre)
+  {
+    $this->nombre = $nombre;
+  }
+  public function setDescripcion($descripcion)
+  {
+    $this->descripcion = $descripcion;
+  }
+  public function setStock($stock)
+  {
+    $this->stock = $stock;
+  }
+  public function setPrecio($precio)
+  {
+    $this->precio = $precio;
+  }
+  public function setImgUrl($imgUrl)
+  {
+    $this->imgUrl = $imgUrl;
   }
 }
