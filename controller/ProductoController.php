@@ -31,4 +31,8 @@ class ProductoController{
     return ProductoDecorator::get($id);
   }
   
+  public function search($search)
+  {
+    return ProductoDecorator::search($search);
+  }
 }
