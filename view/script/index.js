@@ -37,7 +37,7 @@ $('#search').on('keyup', function() {
     });
 
     
-  }
+  }     
 });
 
 
